@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "title": "AI Suggestions",
+    "image": "/images/aiSuggestions.png",
+    "date": "May 31, 2024",
+    "desc": "Say goodbye to the hassle of searching for the right collection or tag when you save a new bookmark — our new ✦ AI model...",
+    "claps": 149,
+    "comments": 4
+  },
+  {
+    "id": 2,
+    "title": "Bookmark Notes",
+    "image": "/images/bookmarkNotes.png",
+    "date": "Jun 3, 2023",
+    "desc": "With Markdown support.",
+    "claps": 131,
+    "comments": 15
+  },
+  {
+    "id": 3,
+    "title": "Export subset of bookmarks",
+    "image": "/images/exportSubsetBookmarks.png",
+    "date": "Jun 5, 2023",
+    "desc": "More granular way to download your data.",
+    "claps": 72,
+    "comments": 1
+  },
+  {
+    "id": 4,
+    "title": "New Feature: Reminders",
+    "image": "/images/reminders.png",
+    "date": "Apr 17, 2023",
+    "desc": "Schedule bookmarks for later.",
+    "claps": 77,
+    "comments": 2
+  },
+  {
+    "id": 5,
+    "title": "Two Factor Authentication (2FA)",
+    "image": "/images/2fa.png",
+    "date": "Apr 6, 2023",
+    "desc": "Extra layer of security to your account.",
+    "claps": 7,
+    "comments": 0
+  },
+  {
+    "id": 6,
+    "title": "iOS/iPadOS App 5.0",
+    "image": "/images/iosApp5.png",
+    "date": "Mar 28, 2023",
+    "desc": "Rewritten from scratch with native technology.",
+    "claps": 35,
+    "comments": 6
+  },
+  {
+    "id": 7,
+    "title": "Highlights",
+    "image": "/images/highlightBlog.png",
+    "date": "Jul 7, 2022",
+    "desc": "Annotate web and easily revisit key passages in the future.",
+    "claps": 100,
+    "comments": 3
+  },
+  {
+    "id": 8,
+    "title": "Automatic Backup & New CSV Format",
+    "image": "/images/backup_csv.png",
+    "date": "Jun 6, 2022",
+    "desc": "Back up, recover, and restore data from your account and create copies of previous versions.",
+    "claps": 19,
+    "comments": 0
+  },
+  {
+    "id": 9,
+    "title": "Search 2.0",
+    "image": "/images/search2.png",
+    "date": "Aug 23, 2021",
+    "desc": "Quick. Accurate. Flexible.",
+    "claps": 193,
+    "comments": 9
+  },
+  {
+    "id": 10,
+    "title": "Save All Tabs",
+    "image": "/images/saveAllTabs.png",
+    "date": "Jun 29, 2021",
+    "desc": "Save and organize your tabs in the way that works best for you.",
+    "claps": 122,
+    "comments": 5
+  },
+  {
+    "id": 11,
+    "title": "New Public Page and Embeds",
+    "image": "/images/publicPage_embeds.png",
+    "date": "May 5, 2021",
+    "desc": "Showcase your collection to entire web with new public page and embeds support!",
+    "claps": 528,
+    "comments": 7
+  },
+  {
+    "id": 12,
+    "title": "New Safari 14 Extension",
+    "image": "/images/safariExtension.png",
+    "date": "Jan 22, 2021",
+    "desc": "Beautiful and blazing fast.",
+    "claps": 262,
+    "comments": 2
+  },
+  {
+    "id": 13,
+    "title": "iOS, iPadOS, and Android Update",
+    "image": "/images/updates.png",
+    "date": "Jan 18, 2021",
+    "desc": "Version 4.0 brings many features from Web app along with performance and stability improvements.",
+    "claps": 237,
+    "comments": 0
+  },
+  {
+    "id": 14,
+    "title": "Raindrop.io 5.0",
+    "image": "/images/raindropio5.png",
+    "date": "Oct 15, 2020",
+    "desc": "Fast, intuitive, and most polished release ever.",
+    "claps": "1.98k",
+    "comments": 19
+  },
+  {
+    "id": 15,
+    "title": "Raindrop.io + IFTTT + Zapier",
+    "image": "/images/connectRaindrop.png",
+    "date": "Mar 19, 2020",
+    "desc": "Connect your Raindrop.io account to more than 2000 apps.",
+    "claps": 172,
+    "comments": 3
+  },
+  {
+    "id": 16,
+    "title": "Public API v1.0",
+    "image": "/images/publicApi.png",
+    "date": "Feb 13, 2020",
+    "desc": "Hack, integrate, and extend Raindrop.io.",
+    "claps": 188,
+    "comments": 2
+  },
+  {
+    "id": 17,
+    "title": "Full-Text Search, Permanent Library and more",
+    "image": "/images/permanentLibrary.png",
+    "date": "Jan 29, 2020",
+    "desc": "Now every content of every web-page or PDF that you've saved is fully searchable and have permanent copy.",
+    "claps": "1k",
+    "comments": 11
+  },
+  {
+    "id": 18,
+    "title": "Reorder Bookmarks, Filter Collections, Upload/Search Icons & More",
+    "image": "/images/reorder.png",
+    "date": "Oct 11, 2019",
+    "desc": "Essential features that Raindrop lacks from the beginning.",
+    "claps": 662,
+    "comments": 6
+  },
+  {
+    "id": 19,
+    "title": "iOS & Android v3.3 Update",
+    "image": "/images/v3.3update.png",
+    "date": "May 9, 2019",
+    "desc": "Upload images, Edit URL, 3D Touch, iPad support, Search improvements, and more...",
+    "claps": 404,
+    "comments": 10
+  },
+  {
+    "id": 20,
+    "title": "The State of Raindrop.io 2019",
+    "image": "/images/raindropstate2019.png",
+    "date": "Feb 23, 2019",
+    "desc": "Progress and plans for the future.",
+    "claps": "4.8k",
+    "comments": 57
+  }
+]
