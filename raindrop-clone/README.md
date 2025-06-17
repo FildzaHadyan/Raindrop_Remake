@@ -11,7 +11,6 @@ This project is a remake of https://raindrop.io/ and https://blog.raindrop.io/ u
   /pages              # Next.js pages (static, dynamic, API routes)
     /blog             # Blog list and dynamic blog post pages
     /api              # Mock API endpoints (optional)
-    /[other-pages]    # pricing.js, integrations.js, about.js, etc.
   /public
     /icons            # All SVGs/icons (logo, features, integrations, etc.)
     /images           # All images, screenshots, blog thumbnails
