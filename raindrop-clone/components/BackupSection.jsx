@@ -105,33 +105,33 @@ export default function BackupSection() {
 
   return (
     <section className="relative py-24 px-0 w-full bg-white overflow-x-hidden">
-      {/* Decorative brush background (optional) */}
+      {/* Decorative brush background */}
       <img
         src="/images/backgroundImage3.jpg"
         alt="Brush"
-        className="absolute left-0 top-0 w-1/3 max-w-xs opacity-30 pointer-events-none select-none"
+        className="absolute top-12 left-0 w-7/12 max-w-7xl opacity-30 pointer-events-none select-none"
       />
       <div className="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
         {/* Bottom: Organize with ease and feature card side by side */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white">
+        <div className="w-max grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white">
           {/* Left: Feature card UI image */}
           <div className="w-full flex justify-center items-center">
             <img
               src={
                 features.find((f) => f.key === active)?.image ||
-                "/images/raindrop-io-footer.png"
+                "/images/raindropiofooter.png"
               }
               alt="Feature card UI"
-              className="rounded-xl shadow-lg w-auto h-auto md:h-[600px] md:w-[700px] object-contain"
+              className="rounded-xl shadow-lg w-auto h-auto md:h-[525px] md:w-[1000px] object-fill"
               style={{ maxWidth: "100%", maxHeight: "80vh" }}
             />
           </div>
           {/* Right: Interactive feature list */}
           <div className="flex flex-col items-start w-full">
-            <h3 className="text-4xl md:text-4xl font-bold mb-4 text-black leading-tight">
+            <h3 className="text-4xl md:text-4xl font-semibold mb-4 text-black leading-tight">
               See the big picture
             </h3>
-            <p className="text-xl md:text-xl text-black mb-6 max-w-2xl leading-snug">
+            <p className="text-xl md:text-xl text-black mb-6 max-w-sm leading-snug">
               All relevant info about bookmarks visible at a glance, so you can
               find anything fast.
             </p>
@@ -139,10 +139,10 @@ export default function BackupSection() {
             {features.map((feature) => (
               <div
                 key={feature.key}
-                className={`w-full max-w-lg mb-4 transition-all duration-200 cursor-pointer ${
+                className={`w-6/12 max-w-lg mb-4 transition-all duration-200 cursor-pointer ${
                   active === feature.key
                     ? "bg-red-100 border border-red-200 rounded-lg px-4 py-3 flex items-start text-red-900 text-base font-medium shadow-lg"
-                    : "bg-red-50 border border-red-100 rounded-lg px-4 py-3 flex items-center text-red-900 text-base font-medium opacity-80"
+                    : "bg-white border border-white rounded-lg px-4 py-3 flex items-center text-black text-base font-medium opacity-80"
                 }`}
                 onMouseEnter={() => setActive(feature.key)}
                 onFocus={() => setActive(feature.key)}

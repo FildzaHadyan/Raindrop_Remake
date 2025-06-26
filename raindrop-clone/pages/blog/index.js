@@ -2,6 +2,7 @@ import Head from "next/head";
 import blogPosts from "@/data/blogPosts.json";
 import BlogCard from "@/components/BlogCard";
 import BlogNavbar from "@/components/BlogNavbar";
+import BlogTabs from "@/components/BlogTabs";
 
 const sidebarLinks = [
   "Help",
@@ -24,33 +25,20 @@ export default function Blog() {
       </Head>
       <div className="min-h-screen w-full bg-white">
         <BlogNavbar />
-        <main className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white">
+        <main className="max-w-7xl mx-auto py-0 grid grid-cols-1 lg:grid-cols-3 gap-12 bg-white lg:pl-[160px]">
           {/* Left: Blog list */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 pr-16 mt-10">
             <div className="mb-8 flex items-center">
               <img
                 src="/icons/raindroplogo.png"
                 alt="Raindrop.io logo"
                 className="w-20 h-20 mr-4"
               />
-              <h1 className="text-3xl font-bold text-black">
+              <h1 className="text-3xl font-bold text-gray-700">
                 RAINDROP<sup className="text-base font-normal">.IO</sup>
               </h1>
             </div>
-            <div className="flex space-x-6 text-lg font-medium border-b border-gray-200 pb-2 mb-6">
-              <a href="#" className="border-b-2 border-black pb-1 text-black">
-                Home
-              </a>
-              <a href="#" className="text-gray-800 hover:text-black">
-                About
-              </a>
-              <a href="#" className="text-gray-800 hover:text-black">
-                Updates
-              </a>
-              <a href="#" className="text-gray-800 hover:text-black">
-                Go to App
-              </a>
-            </div>
+            <BlogTabs />
             <div>
               {blogPosts.map((post) => (
                 <BlogCard key={post.id} {...post} />
@@ -66,13 +54,13 @@ export default function Blog() {
                   alt="Raindrop.io logo"
                   className="w-20 h-20 mb-4"
                 />
-                <span className="text-lg mb-2 text-gray-700 text-center">
+                <span className="text-sm mb-2 text-gray-500 text-center">
                   All in one bookmark manager
                 </span>
-                <button className="bg-blue-600 text-white font-semibold px-6 py-2 rounded-full mb-4">
+                <button className="bg-blue-500 text-white font-normal px-4 py-2 rounded-full mb-4">
                   Follow
                 </button>
-                <span className="text-gray-700 mb-4 text-center">
+                <span className="text-gray-500 mb-4 text-center">
                   Connect with Raindrop.io Blog{" "}
                   <span className="inline-block align-middle text-4xl md:text-5xl">
                     <a
@@ -88,7 +76,7 @@ export default function Blog() {
                     </a>
                   </span>{" "}
                 </span>
-                <div className="w-full border-t border-gray-200 my-4"></div>
+                <div className="w-full my-2"></div>
                 <div className="w-full">
                   <span className="block text-gray-800 font-semibold mb-2">
                     Editors
@@ -104,7 +92,7 @@ export default function Blog() {
                       <br />
                       Mussabekov
                     </span>
-                    <button className="ml-auto border border-black rounded-full px-3 py-1 text-sm font-semibold text-black">
+                    <button className="ml-auto border border-black rounded-full px-3 py-1 text-sm font-normal text-black">
                       Follow
                     </button>
                   </div>
@@ -116,8 +104,8 @@ export default function Blog() {
                 </div>
               </div>
               {/* Bottom links */}
-              <div className="w-full px-8 pb-6 mt-auto">
-                <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
+              <div className="w-full px-10 pb-20 mt-auto">
+                <div className="flex flex-wrap gap-x-1 gap-y-1 text-xs text-gray-500">
                   {sidebarLinks.map((link) => (
                     <a key={link} href="#" className="hover:underline">
                       {link}

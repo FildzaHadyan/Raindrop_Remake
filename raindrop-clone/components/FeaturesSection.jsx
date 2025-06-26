@@ -19,7 +19,7 @@ const features = [
   },
   {
     key: "tags",
-    icon: "#",
+    icon: "#️⃣",
     title: "Tags & filters",
     desc: (
       <>
@@ -54,16 +54,16 @@ export default function FeaturesSection() {
 
   return (
     <section className="relative py-24 px-0 w-full bg-white overflow-x-hidden">
-      {/* Decorative brush background (optional) */}
+      {/* Decorative brush background */}
       <img
         src="/images/backgroundImage2.jpg"
         alt="Brush"
-        className="absolute left-0 top-0 w-1/3 max-w-xs opacity-30 pointer-events-none select-none"
+        className="absolute top-80 right-28 w-5/12 max-w-7xl opacity-30 pointer-events-none select-none"
       />
       {/* Centered content */}
       <div className="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
         {/* Top: Heading and subtitle */}
-        <div className="w-full text-center mb-16">
+        <div className="w-full text-center mb-16 flex flex-col items-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 text-black flex flex-col items-center leading-tight">
             <span>
               Designed for{" "}
@@ -76,14 +76,17 @@ export default function FeaturesSection() {
               </span>
             </span>
           </h2>
-          <h4 className="text-2xl md:text-2xl text-black mb-5 leading-snug">
+          <h4
+            className="text-2xl md:text-2xl text-black mb-5 leading-snug"
+            style={{ maxWidth: 750 }}
+          >
             Raindrop.io is the best place to keep all your favorite books,
             songs, articles or whatever else you come across while browsing.
           </h4>
           <p className="text-lg md:text-xl text-gray-500 leading-relaxed max-w-2xl mx-auto">
             We're not trying to reinvent the wheel; we're working on a tool that
             does everything you expect from a{" "}
-            <span className="font-semibold text-black">
+            <span className="font-semibold text-gray-500">
               modern bookmark manager.
             </span>
           </p>
@@ -105,8 +108,8 @@ export default function FeaturesSection() {
                 key={feature.key}
                 className={`w-full max-w-lg mb-4 transition-all duration-200 cursor-pointer ${
                   active === feature.key
-                    ? "bg-yellow-100 border border-yellow-200 rounded-lg px-4 py-3 flex items-start text-yellow-900 text-base font-medium shadow-lg"
-                    : "bg-yellow-50 border border-yellow-100 rounded-lg px-4 py-3 flex items-center text-yellow-900 text-base font-medium opacity-80"
+                    ? "bg-orange-50 border border-orange-200 rounded-lg px-4 py-3 flex items-start text-orange-900 text-base font-medium shadow-lg"
+                    : "bg-white border border-white rounded-lg px-4 py-3 flex items-center text-white text-base font-medium opacity-80"
                 }`}
                 onMouseEnter={() => setActive(feature.key)}
                 onFocus={() => setActive(feature.key)}
@@ -128,14 +131,14 @@ export default function FeaturesSection() {
             ))}
           </div>
           {/* Right: Feature card UI image */}
-          <div className="w-full flex justify-center items-center">
+          <div className="w-max flex justify-center items-center bg-white">
             <img
               src={
                 features.find((f) => f.key === active)?.image ||
-                "/images/raindrop-io-footer.png"
+                "/images/backgroundImage2.png"
               }
               alt="Feature card UI"
-              className="rounded-xl shadow-lg w-auto h-auto md:h-[600px] md:w-[700px] object-contain"
+              className="rounded-xl shadow-lg w-auto h-auto md:h-[600px] md:w-[1000px] object-fill"
               style={{ maxWidth: "100%", maxHeight: "80vh" }}
             />
           </div>

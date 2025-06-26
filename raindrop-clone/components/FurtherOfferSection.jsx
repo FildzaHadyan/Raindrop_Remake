@@ -151,19 +151,19 @@ export default function FurtherOfferSection() {
   ];
 
   return (
-    <section className="relative py-24 px-0 w-full bg-white overflow-x-hidden">
+    <section className="relative py-2 px-0 w-full bg-white overflow-x-hidden">
       {/* Decorative brush background (optional) */}
-      <img
+      {/* <img
         src="/images/backgroundImage2.jpg"
         alt="Brush"
         className="absolute left-0 top-0 w-1/3 max-w-xs opacity-30 pointer-events-none select-none"
-      />
+      /> */}
       <div className="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
-        <div className="w-full max-w-6xl mx-auto px-4 mt-12 flex flex-col items-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-black text-center">
+        <div className="w-full max-w-6xl mx-auto px-4 mt-0 flex flex-col items-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-black text-center">
             But wait, there's more
           </h2>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-2">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mb-14">
             {additionalFeatures.map((f, i) => (
               <div key={f.title} className="flex flex-col items-start">
                 <span className="text-2xl mb-2">{f.icon}</span>

@@ -67,11 +67,11 @@ export default function ExtraFeaturesSection() {
 
   return (
     <section className="relative py-24 px-0 w-full bg-white overflow-x-hidden">
-      {/* Decorative brush background (optional) */}
+      {/* Decorative brush background */}
       <img
-        src="/images/backgroundImage2.jpg"
+        src="/images/backgroundImage4.jpg"
         alt="Brush"
-        className="absolute left-0 top-0 w-1/3 max-w-xs opacity-30 pointer-events-none select-none"
+        className="absolute top-24 right-48 w-1/3 max-w-7xl opacity-30 pointer-events-none select-none"
       />
       <div className="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
         {/* Bottom: Organize with ease and feature card side by side */}
@@ -94,7 +94,7 @@ export default function ExtraFeaturesSection() {
                 className={`w-full max-w-lg mb-4 transition-all duration-200 cursor-pointer ${
                   active === feature.key
                     ? "bg-purple-100 border border-purple-200 rounded-lg px-4 py-3 flex items-start text-purple-900 text-base font-medium shadow-lg"
-                    : "bg-purple-50 border border-purple-100 rounded-lg px-4 py-3 flex items-center text-purple-900 text-base font-medium opacity-80"
+                    : "bg-white border border-white rounded-lg px-4 py-3 flex items-center text-black text-base font-medium opacity-80"
                 }`}
                 onMouseEnter={() => setActive(feature.key)}
                 onFocus={() => setActive(feature.key)}
@@ -116,14 +116,14 @@ export default function ExtraFeaturesSection() {
             ))}
           </div>
           {/* Right: Feature card UI image */}
-          <div className="w-full flex justify-center items-center">
+          <div className="w-max flex justify-center items-center">
             <img
               src={
                 features.find((f) => f.key === active)?.image ||
-                "/images/raindrop-io-footer.png"
+                "/images/raindropiofooter.png"
               }
               alt="Feature card UI"
-              className="rounded-xl shadow-lg w-auto h-auto md:h-[600px] md:w-[700px] object-contain"
+              className="rounded-xl shadow-lg w-auto h-auto md:h-[600px] md:w-[1000px] object-fill"
               style={{ maxWidth: "100%", maxHeight: "80vh" }}
             />
           </div>

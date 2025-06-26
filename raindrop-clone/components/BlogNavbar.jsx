@@ -1,27 +1,56 @@
+import React, { useEffect, useRef, useState } from "react";
+
 export default function BlogNavbar() {
+  const [show, setShow] = useState(true);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current && currentScrollY > 40) {
+        setShow(false); // scrolling down
+      } else {
+        setShow(true); // scrolling up
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 flex items-center justify-between px-8 py-3">
+    <nav
+      className={`sticky top-0 z-50 w-full bg-white border-b border-gray-200 flex items-center justify-between px-0 py-0 transition-transform duration-300 ${
+        show ? "translate-y-0" : "-translate-y-full"
+      }`}
+      style={{ willChange: "transform", minHeight: 58, height: 58 }}
+    >
       {/* Left: Medium logo and search bar */}
-      <div className="flex items-center">
+      <div className="flex items-center pl-2">
         <a
           href="https://medium.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center mr-4"
+          className="flex items-center mr-2"
         >
           <img
             src="/images/mediumLogo.png"
             alt="Medium logo"
-            className="h-12 w-auto object-contain"
-            style={{ minWidth: 60 }}
+            className="h-[96px] w-auto object-contain"
+            style={{ minWidth: 48 }}
           />
         </a>
-        <div className="relative ml-2 w-48 md:w-64">
+        <div className="relative ml-2 w-[230px]">
           <input
             type="text"
             placeholder="Search"
-            className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-300 bg-gray-100 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300"
-            style={{ fontSize: "1rem" }}
+            className="w-full pl-10 pr-4 py-2 rounded-full border border-gray-50 bg-gray-100 text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 shadow-none"
+            style={{
+              fontSize: "14px",
+              height: 40,
+              fontWeight: 400,
+              borderWidth: 1,
+            }}
           />
           <span className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500">
             <svg
@@ -42,8 +71,8 @@ export default function BlogNavbar() {
         </div>
       </div>
       {/* Right: Write, Sign up, Sign in, user icon */}
-      <div className="flex items-center space-x-2 ml-6">
-        <button className="flex items-center text-gray-700 hover:text-black font-medium px-3 py-2 rounded-full transition">
+      <div className="flex items-center space-x-1 mr-6">
+        <button className="flex items-center text-gray-500 hover:text-black font-medium px-3 py-2 rounded-full transition text-[16px] h-[40px] mr-5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5 mr-1"
@@ -66,16 +95,16 @@ export default function BlogNavbar() {
           </svg>
           Write
         </button>
-        <button className="bg-blue-600 text-white font-semibold px-5 py-2 rounded-full">
+        <button className="bg-blue-600 text-white font-normal px-4 py-0 rounded-full text-[13px] h-[33px] ml-1">
           Sign up
         </button>
-        <button className="text-gray-700 font-semibold px-5 py-2 rounded-full">
+        <button className="text-gray-500 font-normal px-4 py-2 rounded-full text-[14px] h-[38px]">
           Sign in
         </button>
-        <span className="ml-2">
+        <span className="ml-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-gray-400"
+            className="h-9 w-9 text-gray-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"

@@ -39,15 +39,15 @@ export default function OfferSection() {
 
   return (
     <section className="relative py-24 px-0 w-full bg-white overflow-x-hidden">
-      {/* Decorative brush background (optional) */}
+      {/* Decorative brush background */}
       <img
         src="/images/backgroundImage2.jpg"
         alt="Brush"
-        className="absolute left-0 top-0 w-1/3 max-w-xs opacity-30 pointer-events-none select-none"
+        className="absolute top-96 -right-60 w-1/3 max-w-7xl opacity-80 pointer-events-none select-none"
       />
       <div className="w-full max-w-5xl mx-auto px-4 flex flex-col items-center">
         {/* Top: Safe & secure & No limits */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-12 mb-10">
           {/* Safe & secure */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black leading-tight">
@@ -57,18 +57,21 @@ export default function OfferSection() {
               SSL everywhere, 100% cloud-based architecture secured behind a
               VPC.
             </p>
-            <p className="text-base text-black mb-4">
+            <p className="text-lg text-black mb-4">
               We keep your data safe, never sold.
               <br />
               No ads & trackers. Open-source apps.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-blue-600 font-semibold">
+              <a
+                href="#"
+                className="text-blue-500 hover:underline font-semibold"
+              >
                 About Raindrop.io
               </a>
               <a
                 href="#"
-                className="text-blue-600 font-semibold flex items-center"
+                className="text-blue-500 hover:underline font-semibold flex items-center"
               >
                 <span className="mr-1">
                   {" "}
@@ -94,61 +97,61 @@ export default function OfferSection() {
               <br />
               Free to use indefinitely. Upgrade for premium features.
             </p>
-            <a href="#" className="text-blue-600 font-semibold">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Compare plans
             </a>
           </div>
         </div>
         {/* Bottom: Access even outside of the browser */}
-        <div className="w-full text-center mt-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-black leading-tight">
+        <div className="w-full text-center mt-10 font-sans">
+          <h2 className="text-4xl md:text-4xl font-semibold mb-6 text-black leading-tight">
             Access even outside of the browser
           </h2>
-          <p className="text-lg md:text-xl text-black mb-2">
+          <p className="text-lg md:text-xl text-black mb-2 max-w-2xl mx-auto leading-snug">
             Raindrop.io is available as{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Chrome
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Firefox
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Safari
             </a>
             , and{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Edge
             </a>{" "}
             extension.
             <br />
             But we also have{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Web
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Windows
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Mac
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Linux
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               iPad
             </a>
             ,{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               iPhone
             </a>
             , and{" "}
-            <a href="#" className="text-blue-600">
+            <a href="#" className="text-blue-500 hover:underline font-semibold">
               Android
             </a>{" "}
             app.
@@ -162,7 +165,7 @@ export default function OfferSection() {
               src="/images/accessOutsideBrowser.png"
               alt="Devices preview"
               className="w-full max-w-4xl mx-auto rounded-xl shadow-lg"
-              style={{ maxHeight: "60vh" }}
+              style={{ maxHeight: "100%", maxWidth: "100%" }}
             />
           </div>
         </div>

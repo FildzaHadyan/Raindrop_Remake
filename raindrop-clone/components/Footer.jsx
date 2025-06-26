@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
     <footer className="w-full bg-white border-t border-gray-200 py-5 px-4">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-2 items-start">
         {/* Left: Links */}
-        <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-4 text-left">
+        <div className="md:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-2 text-left text-gray-200 font-sans font-semibold">
           <div>
             <a href="#" className="block text-black mb-2 hover:underline">
               Features
@@ -34,16 +34,16 @@ export default function Footer() {
           </div>
         </div>
         {/* Right: Logo, tagline, copyright, social */}
-        <div className="flex flex-col items-start md:items-end text-left md:text-right">
+        <div className="flex flex-col items-start md:items-start text-left md:text-right">
           <div className="flex items-center mb-2">
             <img
-              src="/icons/raindroplogo.png"
+              src="/images/raindropiofooter.png"
               alt="Raindrop.io logo"
               className="w-8 h-8 mr-2"
             />
-            <span className="font-bold text-lg text-gray-500">Raindrop.io</span>
+            <span className="font-bold text-lg text-gray-400">Raindrop.io</span>
           </div>
-          <span className="text-gray-600 mb-2">
+          <span className="text-gray-400 mb-2">
             All in one bookmark manager
           </span>
           <span className="text-gray-400 text-sm mb-2">
@@ -63,13 +63,13 @@ export default function Footer() {
                 />
               </a>
             </span>{" "}
-            <a href="#" className="text-gray-500 hover:text-blue-600 underline">
+            <a href="#" className="text-gray-400 hover:text-blue-600 underline">
               Twitter
             </a>
-            <a href="#" className="text-gray-500 hover:text-blue-600 underline">
+            <a href="#" className="text-gray-400 hover:text-blue-600 underline">
               Terms
             </a>
-            <a href="#" className="text-gray-500 hover:text-blue-600 underline">
+            <a href="#" className="text-gray-400 hover:text-blue-600 underline">
               Privacy
             </a>
           </div>

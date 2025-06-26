@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Left: Raindrop Logo and Text */}
-        <div className="flex items-center">
+        <div className="flex items-center ml-28">
           <div>
             <img
               src="/icons/raindroplogo.png"
@@ -39,13 +39,14 @@ export default function Navbar() {
             href="/"
             className="text-black hover:text-gray-800 flex items-baseline"
           >
-            <span className="ml-2 text-black">
-              RAINDROP<sup className="text-sm relative top-[-0.1em]">.IO</sup>
+            <span className="ml-2 text-gray-700 font-bold text-lg">
+              RAINDROP
+              <sup className="text-sm relative top-[-0.3em] font-thin">.IO</sup>
             </span>
           </a>
         </div>
         {/* Center: Navigation Links */}
-        <div className="flex-grow flex justify-center items-center space-x-6 md:flex">
+        <div className="flex-grow flex justify-center items-center space-x-5 md:flex font-sans font-semibold">
           <a
             href="/download"
             className="text-neutral-950 hover:bg-gray-100 px-2 py-1"
@@ -78,7 +79,7 @@ export default function Navbar() {
           </a>
         </div>
         {/* Right: Login Button with Icon */}
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center space-x-2 mr-20">
           <a
             href="/account/login"
             className="text-neutral-950 hover:bg-gray-100 px-2 py-1 flex items-center"
